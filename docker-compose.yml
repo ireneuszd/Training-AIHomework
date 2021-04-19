@@ -1,13 +1,13 @@
 version: "3"
 
 services:
-  PingService:
+  pingservice:
     build: PingService/
     command: python ./main.py
     ports:
       - "8080:8080"
 
-  ReceiverService:
+  receiverservice:
     build: ReceiverService/
     command: python ./main.py
     ports:
